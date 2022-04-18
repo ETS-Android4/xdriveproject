@@ -42,6 +42,11 @@ public class Sean_X_Drive
     double frontRightPower = (y - x - rx) / denominator;
     double backRightPower = (y + x - rx) / denominator;
 
+   frontRight = Range.clip(frontRight, -1, 1);
+   frontLeft = Range.clip(frontLeft, -1, 1);
+   backRight = Range.clip(backRight, -1, 1);
+   backLeft = Range.clip(backLeft, -1, 1);
+ 
    frontLeft.setPower(frontLeftPower);
    backLeft.setPower(backLeftPower);
    frontRight.setPower(frontRightPower);
