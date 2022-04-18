@@ -1,13 +1,24 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.qualcomm.robotcore.util.ElapsedTime;
+import com.qualcomm.robotcore.hardware.CRServo;
+import com.qualcomm.robotcore.hardware.Servo;
+import com.qualcomm.robotcore.util.Util;
 
-import org.firstinspires.ftc.robotcore.external.Telemetry;
+@Disabled
+@TeleOp(name = "Sean X Drive", group = "TeleOp")
+public class SeanXDrive extends LinearOpMode {
 
-@TeleOp
+public class Sean_X_Drive 
+ DcMotor frontRight;
+ DcMotor frontLeft;
+ DcMotor backRight;
+ DcMotor backLeft;
+ 
+ @Override 
 
-public class Sean_X_Drive {
-    public 
+
+}    
