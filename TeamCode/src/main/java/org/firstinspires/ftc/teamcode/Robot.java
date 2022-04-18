@@ -19,6 +19,20 @@ public class Sean_X_Drive
  DcMotor backLeft;
  
  @Override 
+ public void runOpMode() throws InterruptedExeception {
+  
+  frontRight = hardwareMap.dcMotor.get("FR");
+  frontLeft = hardwareMap.dcMotor.get("FL");
+  backRight = hardwareMap.dcMotor.get("BR");
+  backLeft = hardwareMap.dcMotor.get("BL");
 
-
+  frontRight.setDirection(DcMotor.Direction.REVERSE);
+  frontLeft.setDirection(DcMotor.Direction.REVERSE);
+  
+  waitForStart();
+  
+  while (opModeIsActive()) {
+  double y = gamepad1.left_stick_y;
+  double x = gamepad1.right_stick_x * 1.1;
+  double rx = gamepad1.left_stick_x;
 }    
